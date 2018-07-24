@@ -1,0 +1,2 @@
+module UserGifsHelper
+end

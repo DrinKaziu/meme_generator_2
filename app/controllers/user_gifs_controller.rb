@@ -1,0 +1,2 @@
+class UserGifsController < ApplicationController
+end

@@ -1,0 +1,11 @@
+<h1>Search Results</h1>
+
+
+<%= form_tag("/gifs") do %>
+  <%= label_tag(:query, "Search for:") %>
+  <%= text_field_tag(:query) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+<% buybug %>
+<%= @result %>
