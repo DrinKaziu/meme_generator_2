@@ -3,8 +3,7 @@
   <h1 class="display-4">Gifs Finder</h1>
   <p class="lead">If you're reading this, congratulations. You pay more attention to detail then it is necessary.</p>
   <hr class="my-4">
-  <p>No, really.. stop reading and do something productive.</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  <p>No, really.. stop reading and do search for some gifs.</p>
 
   <%= form_tag "/", method: "get" do %>
     <%= text_field_tag :query%>
@@ -12,14 +11,13 @@
   <% end %>
 </div>
 
-<div>
-
+<div class="container">
   <ul>
     <% if @search_result %>
-      <li><% @search_result.each do |url| %></li>
+      <li><% @search_result.each do |url| %>
         <iframe src="<%= url %>"></iframe>
       <% end %>
+      </li>
     <% end %>
   </ul>
-
 </div>
